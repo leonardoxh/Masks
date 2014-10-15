@@ -19,6 +19,11 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
 
+/**
+ * Default input mask this will change the <code>#</code> char to an number
+ * @see com.github.leonardoxh.masks.Masks
+ * @author Leonardo Rossetto <leonardoxh@gmail.com>
+ */
 public class InputMask implements TextWatcher {
 
     private boolean isUpdating;
@@ -42,7 +47,7 @@ public class InputMask implements TextWatcher {
             return;
         }
         int i = 0;
-        for (char m : mMask.toCharArray()) {
+        for(char m : mMask.toCharArray()) {
             if (m != '#' && str.length() > mOldString.length()) {
                 mask += m;
                 continue;

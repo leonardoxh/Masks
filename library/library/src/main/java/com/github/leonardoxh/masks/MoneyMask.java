@@ -22,6 +22,10 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
 
+/**
+ * Monetary mask formats the input to a currency format by the given locale
+ * @author Leonardo Rossetto <leonardoxh@gmail.com>
+ */
 public final class MoneyMask implements TextWatcher {
 
     private final EditText mText;

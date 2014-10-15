@@ -15,6 +15,10 @@
 */
 package com.github.leonardoxh.masks;
 
+/**
+ * Default masks hold
+ * @author Leonardo Rossetto <leonardoxh@gmail.com>
+ */
 public final class Masks {
 
     public static final String CPF = "###.###.###-##";
