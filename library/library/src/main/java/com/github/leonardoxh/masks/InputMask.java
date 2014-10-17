@@ -26,10 +26,10 @@ import android.widget.EditText;
  */
 public class InputMask implements TextWatcher {
 
-    private boolean isUpdating;
-    private String mOldString = "";
+    protected boolean isUpdating;
+    protected String mOldString = "";
+    protected String mMask;
     private final EditText mEditText;
-    private final String mMask;
 
     public InputMask(EditText editText, String mask) {
         mEditText = editText;
@@ -37,24 +37,23 @@ public class InputMask implements TextWatcher {
     }
 
     @Override
-    public void onTextChanged(CharSequence s, int start, int before,
-                              int count) {
+    public void onTextChanged(CharSequence s, int start, int before, int count) {
         String str = s.toString().replaceAll("[^\\d]", "");
         StringBuilder mask = new StringBuilder();
-        if (isUpdating) {
+        if(isUpdating) {
             mOldString = str;
             isUpdating = false;
             return;
         }
         int i = 0;
         for(char m : mMask.toCharArray()) {
-            if (m != '#' && str.length() > mOldString.length()) {
+            if(m != '#' && str.length() > mOldString.length()) {
                 mask.append(m);
                 continue;
             }
             try {
                 mask.append(str.charAt(i));
-            } catch (Exception e) {
+            } catch(Exception e) {
                 break;
             }
             i++;

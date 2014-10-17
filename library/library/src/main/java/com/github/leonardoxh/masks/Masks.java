@@ -21,8 +21,10 @@ package com.github.leonardoxh.masks;
  */
 public final class Masks {
 
-    public static final String CPF_MASK = "###.###.###-##";
-    public static final String CNPJ_MASK = "##.###.###/####-##";
-    public static final String TELEPHONE_BR = "(##) ####-####";
+    public static final String DEFAULT_CPF_MASK = "###.###.###-##";
+    public static final String DEFAULT_CNPJ_MASK = "##.###.###/####-##";
+
+    public static final String DEFAULT_BRAZIL_MASK = "(##) ####-####";
+    public static final String DEFAULT_SAO_PAULO_MASK = "(##) #####-####";
 
 }
