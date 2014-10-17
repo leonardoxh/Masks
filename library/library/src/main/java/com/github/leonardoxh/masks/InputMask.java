@@ -31,10 +31,6 @@ public class InputMask implements TextWatcher {
     private final EditText mEditText;
     private final String mMask;
 
-    public static final String CPF_MASK = "###.###.###-##";
-    public static final String CNPJ_MASK = "##.###.###/####-##";
-    public static final String TELEPHONE_BR = "(##) ####-####";
-
     public InputMask(EditText editText, String mask) {
         mEditText = editText;
         mMask = mask;
