@@ -31,6 +31,10 @@ public class InputMask implements TextWatcher {
     private final EditText mEditText;
     private final String mMask;
 
+    public static final String CPF_MASK = "###.###.###-##";
+    public static final String CNPJ_MASK = "##.###.###/####-##";
+    public static final String TELEPHONE_BR = "(##) ####-####";
+
     public InputMask(EditText editText, String mask) {
         mEditText = editText;
         mMask = mask;
@@ -40,7 +44,7 @@ public class InputMask implements TextWatcher {
     public void onTextChanged(CharSequence s, int start, int before,
                               int count) {
         String str = s.toString().replaceAll("[^\\d]", "");
-        String mask = "";
+        StringBuilder mask = new StringBuilder();
         if (isUpdating) {
             mOldString = str;
             isUpdating = false;
@@ -49,18 +53,18 @@ public class InputMask implements TextWatcher {
         int i = 0;
         for(char m : mMask.toCharArray()) {
             if (m != '#' && str.length() > mOldString.length()) {
-                mask += m;
+                mask.append(m);
                 continue;
             }
             try {
-                mask += str.charAt(i);
+                mask.append(str.charAt(i));
             } catch (Exception e) {
                 break;
             }
             i++;
         }
         isUpdating = true;
-        mEditText.setText(mask);
+        mEditText.setText(mask.toString());
         mEditText.setSelection(mask.length());
     }
 
