@@ -6,7 +6,7 @@ A collection of textwatcher for Android, it comes with CPF/CNPJ formatting, and 
 Gradle:
 ===
 ```
-compile 'com.github.leonardoxh:android-masks:1.0'
+compile 'com.github.leonardoxh:android-masks:1.1'
 ```
 
 Licence:
