@@ -22,7 +22,7 @@ import android.widget.EditText;
 /**
  * Default input mask this will change the <code>#</code> char to an number
  * @see com.github.leonardoxh.masks.Masks
- * @author Leonardo Rossetto <leonardoxh@gmail.com>
+ * @author Leonardo Rossetto
  */
 public class InputMask implements TextWatcher {
 

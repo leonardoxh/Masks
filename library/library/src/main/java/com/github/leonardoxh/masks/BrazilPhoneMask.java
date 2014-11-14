@@ -22,7 +22,7 @@ import android.widget.EditText;
  * but this class also handle the two possible brazilian masks, for Sao Paulo
  * that have a 9 number first and for other countrys
  * @see com.github.leonardoxh.masks.Masks
- * @author Leonardo Rossetto <leonardoxh@gmail.com>
+ * @author Leonardo Rossetto
  */
 public class BrazilPhoneMask extends InputMask {
 

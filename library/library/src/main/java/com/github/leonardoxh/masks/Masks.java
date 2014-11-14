@@ -17,7 +17,7 @@ package com.github.leonardoxh.masks;
 
 /**
  * Default masks hold
- * @author Leonardo Rossetto <leonardoxh@gmail.com>
+ * @author Leonardo Rossetto
  */
 public final class Masks {
 
