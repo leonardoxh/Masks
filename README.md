@@ -1,9 +1,13 @@
 Masks
 ====
 
-A collection of textwatcher for Android
+A collection of textwatcher for Android, it comes with CPF/CNPJ formatting, and a Brazil telephone.
 
-Gradle suport comming on next weaks!
+Gradle:
+===
+```
+compile 'com.github.leonardoxh:android-masks:1.0'
+```
 
 Licence:
 =================
