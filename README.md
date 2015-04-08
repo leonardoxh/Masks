@@ -1,7 +1,9 @@
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Masks-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1708)
+
 Masks
 ====
 
-A collection of textwatcher for Android, it comes with CPF/CNPJ formatting, and a Brazil telephone, that's all!
+A collection of TextWatcher for Android, it comes with CPF/CNPJ formatting, and a Brazil telephone, that's all!
 
 Gradle:
 ===
